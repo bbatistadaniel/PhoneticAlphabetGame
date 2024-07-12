@@ -9,7 +9,7 @@ public class Main {
         char randomLetter = (char) ThreadLocalRandom.current().nextInt(65, 90 + 1);
 
         // Array of possible answers
-        final String[] answers = {"alfa", "alpha", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel", "india", "juliett", "kilo", "lima", "mike", "november", "oscar", "papa", "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey", "xray", "x-ray", "yankee", "zulu"};
+        final String[] answers = {"alfa", "alpha", "bravo", "charlie", "delta", "echo", "eco", "foxtrot", "fox trot", "golf", "hotel", "india", "juliett", "juliet", "julliett", "julliet", "kilo", "lima", "mike", "november", "oscar", "papa", "quebec", "quebeck", "quebek", "romeo", "sierra", "tango", "uniform", "victor", "viktor", "victer", "whiskey", "xray", "x-ray", "x ray", "yankee", "zulu"};
 
         // Create the main JFrame window
         JFrame window = new JFrame("Phonetic Alphabet Game");
@@ -70,10 +70,7 @@ public class Main {
                             hits.setText(String.valueOf(Integer.parseInt(hits.getText()) + 1));
                         }
                     }
-                } catch (Exception e) {
-                    // Handle any exceptions that occur during processing
-                    e.printStackTrace();
-                }
+                } catch (Exception _) {}
             }
         }
     }
